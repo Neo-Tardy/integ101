@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(20, 20, 20, 0.929);
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 15px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background-color: #161616;
+    transform: scale(1.05);
+}
+
+.content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    background-color: rgba(42, 46, 53, 0.591);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+    max-width: 800px;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.7);
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #dcdcdc;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 150px;
+    height: 250px;
+    background-color: #444;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    object-fit: cover;
+    margin: 0 10px;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(4, 0, 255, 0.5);
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: rgba(20, 20, 20, 0.929);
+    color: white;
+    width: 100%;
+    margin-top: auto;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.7);
+}
